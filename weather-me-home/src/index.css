@@ -59,6 +59,9 @@ em {
     color: #f3d350;
     font-style: normal;
 }
+.branding #firey {
+  border-radius: 80%;
+}
 
 .header {
     background: -webkit-linear-gradient( top, rgba(0, 0, 0, .2), rgba(0, 0, 0, .5)), url(images/backgrounds/me.jpg);
@@ -84,7 +87,10 @@ em {
 
 .header .tagline {
     display: none;
+
 }
+
+
 
 @media screen and (min-width: 600px) {
     .header {
@@ -124,7 +130,7 @@ em {
 
 .nav .nav-elements .branding {
     max-width: 180px;
-    margin: 0 auto;
+    margin: 0 auto
 }
 
 .nav .nav-elements .navbar {
@@ -342,41 +348,6 @@ em {
 
 /* nav */
 
-.footer {
-    background-color: #312a10;
-    color: #fff;
-    padding: 0 0 5em;
-    line-height: 100%;
-    text-align: center;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-    -webkit-align-items: flex-end;
-    -ms-flex-align: end;
-    align-items: flex-end;
-    background: -webkit-linear-gradient(top, transparent, #312a10), url();
-    background: linear-gradient(180deg, transparent, #312a10), url();
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    height: 100vh;
-    max-height: 800px;
-}
-
-.footer .nav {
-    margin-top: 0;
-}
-
-.footer .legal {
-    max-width: 700px;
-    margin: 0 auto;
-    font-size: 1rem;
-    line-height: 110%;
-    margin-top: 3rem;
-}
-
 .section {
     min-height: 40vh;
     display: -webkit-box;
@@ -414,7 +385,6 @@ em {
         font-size: 2rem;
     }
 }
-
 
 #p-blog {
     background-color: #e7c84c;
