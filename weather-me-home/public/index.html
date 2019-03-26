@@ -1,41 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="theme-color" content="#000000" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Me Home</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,600,700" rel="stylesheet">
+  <link href="index.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<header id="home" class="header">
+  <nav class="nav" role="navigation">
+    <div class="container nav-elements">
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+      <div class="branding">
+        <a href="#home">  <h2>Elena</h2>  </a>
+      </div><!-- branding -->
+      <ul class="navbar">
+        <li><a href="#home">home</a></li>
+        <li><a href="#p-blog">Person Blog</a></li>
+        <li><a href="#t-blog">Techinical Blog</a></li>
+      </ul><!-- navbar -->
+      <div class="forecast">
+        <div class="prefs">
+          <form>
+            <h3>Forecast</h3>
+            <div>
+              <label for="location" class="hidden">Location</label>
+              <input id="location" placeholder="Enter location">
+            </div>
+            <div class="button">
+              <input type="submit" value="Get Forecast" class="forecast-button">
+            </div>
+            <div class="conditions"></div>
+          </form>
+        </div><!-- prefs -->
+        <div class="results">
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+          <div id="all" class="selected">All</div>
+        </div><!-- options -->
+      </div><!-- results -->
+      <!-- container nav-elements -->
+  </nav>
+  <div class="container tagline">
+    <h1 class="headline"> Weather Me Home</h1>
+    <p>A way for me to further my programming skills and add some new features or side projects. Catch up writing on a year's worth of travel. While looking out the window from time to time add see what the weather is doing.</p>
+  </div><!-- container tagline -->
+</header><!-- #home -->
+
+
+<section id="p-blog" class="section">
+  <header class="imageheader"></header>
+  <div class="container">
+    <h2 class="headline">Persong Blog</h2>
+    <div class="p.blog-cards">
+      <div class="blog-card">
+        <img src="" alt="HenryTwill Photo">
+        <div class="card-info">
+          <h3 class="card-name">Henry Twill, Jr</h3>
+          <h4 class="card-title">CEO</h4>
+        </div>
+        <p class="card-text"></p>
+      </div><!-- blog -->
+    </div><!-- card -->
+  </div><!-- container -->
+</section><!-- p.blog -->
+
+
+</body>
 </html>
