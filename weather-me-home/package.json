@@ -2,7 +2,9 @@
   "name": "weather-me-home",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://elenaschubel.github.io/Weather-me-home/",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-scripts": "2.1.8"
@@ -11,6 +13,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "npm run build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
